@@ -6,14 +6,14 @@ export default function Receta({ recetas }) {
                     <h2>{receta.nombre}</h2>
 
                     <section className='ingredientes'>
-                        <p>Ingredientes:</p>
+                        <h3>Ingredientes:</h3>
                         {receta.ingredientes.map((ingrediente, index) => (
                             <p key={index}>{`${ingrediente.nombre} - ${ingrediente.cantidad}${ingrediente.medida}`}</p>
                         ))}
                     </section>
 
                     <section className='instrucciones'>
-                        <h1>Instrucciones</h1>
+                        <h3>Instrucciones</h3>
                         {receta.instrucciones.map((instruccion, index) => (
                             <p key={index}>{instruccion}</p>
                         ))}
